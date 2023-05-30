@@ -1,0 +1,101 @@
+WHAT IS OOP?
+
+a) Principle of design and development of programs using modular approach.POP forcuses on processing
+of instructions in order to perform a desired computation.
+
+b) Combinesboth the data and function that operate into a single unit called the object
+
+OOPS PRINCIPLES
+
+a) Encapsulation
+    Process of binding data members (variables, properties) and member functions into a single unit.
+    Outside world cannot access the data.
+
+b) Abstraction
+    It refers to present necessary features without including more data or explaination.
+    Data abstraction is a programming technique that relis on the seperation of interface and implementation
+
+c)Inheritence
+    Mechanism of deriving a new class from an old class is called inheritence.
+    The old class is known as base class
+
+d) Ploymorphism
+    It means ability to take more than one form.
+
+
+CLASS AND OBJECTS
+
+a) Everything in C++ is associated wiht classes and objects, along with its attributes and methods
+b) They are basically variables and functions that belongs to the class.Known as class members
+c) User-defined data type that we can use in our programming and works as an object constructor, or a blue print for creating objects
+
+CLASS METHODS 
+Methods are functions that belongs to the class . They define the best action taken by boject
+
+
+class Student{
+    public:
+        //Declaration of state properties
+        string name;
+        int rolNo;
+        static int age; 
+        //Declaration of Actions
+        void diaplay(){
+            //instance methods
+            //method body
+        }
+};
+
+
+
+ACESS SPECIFIERS
+members- attributes methods
+public -members are accessible form outside the class
+private- members cannot be accessed (or viewed from outside) the class
+protected- members cannot be accessed form outside the class , however they can be accessed in inherited classes.
+by default are inherited classes
+
+
+DEFAULT COPYING
+By default, objects can be copied. In particular a class object can be initialized with a copy of an object of its class.
+
+Dated d1=my_birthday;
+Dated d2{my_birthday};
+
+Copy of a class object is a copy of each member
+
+
+STATIC MEMBERS OF C++
+Declare a member of a class as static it means no matter how many objects of the class are created, there is only one copy of thr static member.
+A static member is shared by all of the objects of the class
+All static data is initialized to zero when the first object is created, if no other initialization is present.
+Independent of any particular object of the class
+A static member function can only access static data member , other static member functions and any other functions and any other functions from outside the class.
+
+
+Class Box{
+    public:
+        static int objectCount;
+        static int getCount(){
+            return length;
+        }
+    private:
+        double length;
+};
+
+Box::getCount();
+
+
+PASSING AND RETURNING OBJECT IN CPP
+
+Pass class objects as arguments and also return them from a function and the same way we pass and return other variables
+
+PASSING AN OBJECT AS ARGUEMENT
+
+To pass an object as an argument we write the object names as argument 
+while calling the function the same way we do it for other variable
+
+
+eg- fun(A a){
+    //Method
+}
